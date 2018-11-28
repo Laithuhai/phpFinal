@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html>
 <head>
@@ -166,7 +167,16 @@ span.psw {
 </head>
 
 <body>
-	<div class="page-header " >
+	<?php 
+	if (isset($_SESSION['username'])){
+		echo 'Bạn đã đăng nhập với tài khoản'.$_SESSION['username']."</br>";
+		echo 'click vào đây để <a href="logout.php">Logout</a>';
+		
+	}
+	else{
+		echo'';
+	}
+	?><div class="page-header " >
 		<span>Chào mừng đến Website</span>
 		<span>Đường dây nóng:<b class="text-danger">08888888</b></span>
 	<span><input class="active navbar-right" type="button" align="right" value="Đăng nhập"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
@@ -175,7 +185,7 @@ span.psw {
 	</div>
 	<div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="login_action.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="sofaImage/avatar.jpg" alt="Avatar" class="avatar">
@@ -195,7 +205,7 @@ span.psw {
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-		<button type="submit">Đăng Nhập</button>
+		<button type="submit" name="dangnhap">Đăng Nhập</button>
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy</button>
       
     </div>
@@ -216,7 +226,7 @@ window.onclick = function(event) {
 	
 	<div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="registration_action.php" method="post">
     <div class="container">
       <h1>Trang đăng ký</h1>
       <p>Vui lòng nhập mới tài khoản</p>
@@ -243,7 +253,7 @@ window.onclick = function(event) {
       <input type="text" placeholder="Vui lòng Nhập Email" name="email" required>	
 		
 <div class="clearfix">
-	<button type="submit" class="signupbtn">Đăng ký</button>
+	<button type="submit" name="dangky" class="signupbtn">Đăng ký</button>
         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Hủy</button>
         
       </div>
