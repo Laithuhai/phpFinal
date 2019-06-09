@@ -182,7 +182,7 @@
                             <h4>Categories</h4>
                         </div>
                         <div class="col-md-6" >
-                            <button type="button" class="btn btn-sm btn-primary">Add New</button>
+                            <a href="add_category.html"><button type="button" class="btn btn-sm btn-primary">Add New</button></a>
                         </div>
 
                     </div>
@@ -197,7 +197,7 @@
                                         <input id="text" name="text" class="form-control here" type="text">
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group row">
                                     <label for="parent-category" class="col-12 col-form-label">Parent Category</label>
                                     <div class="col-12">
@@ -216,12 +216,12 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-12">
-                                        
-                                      <input type="button" id="btn" value="Submit" class="btn btn-primary btn-sm" />
+
+                                        <input type="button" id="btn" value="Submit" class="btn btn-primary btn-sm" />
                                         <script language="javascript">
                                             var button = document.getElementById("btn");
                                             button.onclick = function(){
-                                            alert("you edit successfully!");
+                                                alert("you edit successfully!");
                                             }
                                         </script>
                                     </div>
@@ -243,6 +243,7 @@
                                     <th>Description</th>
                                     <th>Date</th>
                                     <th>Count</th>
+                                    <th>Edit</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -258,9 +259,18 @@
                                     <td><small>Updated the hottes news a daily day</small></td>
                                     <td><small>2019/06/09</small></td>
                                     <td><a href="#"><small>5</small></a></td>
+                                    <td>
+
+                                        <a href="#" onclick="myFunction()"><i class="fa fa-trash"></i></a>
+                                        <script>
+                                            function myFunction() {
+                                                alert("Delete Successfully!");
+                                            }
+                                        </script>
+                                    </td>
                                 </tr>
-                                    
-                                    <tr>
+
+                                <tr>
                                     <td>
                                         <div class="form-check-inline">
                                             <label class="form-check-label">
@@ -271,11 +281,20 @@
                                     <td><a href="#"><small>high-techs</small></a></td>
                                     <td><small>included many specialist topics</small></td>
                                     <td><small>2019/06/09</small></td>
-                                    <td><a href="#"><small>5</small></a></td>
+                                    <td><a href="#"><small>2</small></a></td>
+                                    <td>
+
+                                        <a href="#" onclick="myFunction()"><i class="fa fa-trash"></i></a>
+                                        <script>
+                                            function myFunction() {
+                                                alert("Delete Successfully!");
+                                            }
+                                        </script>
+                                    </td>
                                 </tr>
-                                    
-                                    
-                                    <tr>
+
+
+                                <tr>
                                     <td>
                                         <div class="form-check-inline">
                                             <label class="form-check-label">
@@ -287,9 +306,18 @@
                                     <td><small>you can post the news0</small></td>
                                     <td><small>2019/06/09</small></td>
                                     <td><a href="#"><small>5</small></a></td>
+                                    <td>
+
+                                        <a href="#" onclick="myFunction()"><i class="fa fa-trash"></i></a>
+                                        <script>
+                                            function myFunction() {
+                                                alert("Delete Successfully!");
+                                            }
+                                        </script>
+                                    </td>
                                 </tr>
-                                    
-                                    <tr>
+
+                                <tr>
                                     <td>
                                         <div class="form-check-inline">
                                             <label class="form-check-label">
@@ -301,6 +329,15 @@
                                     <td><small>It used for designer</small></td>
                                     <td><small>2019/06/09</small></td>
                                     <td><a href="#"><small>5</small></a></td>
+                                    <td>
+
+                                        <a href="#" onclick="myFunction()"><i class="fa fa-trash"></i></a>
+                                        <script>
+                                            function myFunction() {
+                                                alert("Delete Successfully!");
+                                            }
+                                        </script>
+                                    </td>
                                 </tr>
 
 
