@@ -296,7 +296,7 @@ img.emoji {
                 </button>
             </div>
             <div class="gv-mark-type">
-                <a href="blog.php" class="no-hover">
+                <a href="blog.html" class="no-hover">
                    IT news
                 </a>
             </div>
@@ -311,15 +311,46 @@ img.emoji {
 </ul>                </nav>
             </div>
             <div class="pull-right" >
-					<ul class="top-details menu-beta l-inline">
-							
-								<form class="form-inline my-2 my-lg-0" action="search.html" method="get">	
-								<input class="search form-control mr-sm-2" type="text" name="search_name" placeholder="Search.." value="">
-								</form>
-						
-						<i class="glyphicon glyphicon-search"></i>
-						</ul>
+				<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 				</div>
+				<style>
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+	margin-top: 15px;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+	margin-top: 15px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
         </div>
     </div>
 </div>
