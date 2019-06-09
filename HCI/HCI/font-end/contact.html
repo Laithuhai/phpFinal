@@ -18,7 +18,7 @@
 <link rel="manifest" href="/manifest.json" />
 
     
-    <title>Contact</title>
+    <title>Blog</title>
     <meta name="description" content="Editorial, youtube video, and blog posts from Gary Vaynerchuk on social media, and entrepreneurship.">
 
     <meta property="og:title" content="Blog"/>
@@ -55,7 +55,14 @@
 <link rel="canonical" href="https://www.garyvaynerchuk.com/blog/" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
-
+<meta property="og:title" content="Blog | GaryVaynerchuk.com" />
+<meta property="og:url" content="https://www.garyvaynerchuk.com/blog/" />
+<meta property="og:site_name" content="GaryVaynerchuk.com" />
+<meta property="article:publisher" content="https://www.facebook.com/gary/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Blog | GaryVaynerchuk.com" />
+<meta name="twitter:site" content="@garyvee" />
+<meta name="twitter:creator" content="@garyvee" />
 <script type='application/ld+json'>{"@context":"https://schema.org","@type":"Person","url":"https://www.garyvaynerchuk.com/","sameAs":["https://www.facebook.com/gary/","https://www.instagram.com/garyvee/","https://www.linkedin.com/in/garyvaynerchuk/","https://www.youtube.com/channel/UCctXZhXmG-kf3tlIXgVZUlw","https://twitter.com/garyvee"],"@id":"#person","name":"Gary Vaynerchuk"}</script>
 <!-- / Yoast SEO Premium plugin. -->
 
@@ -215,8 +222,11 @@ form.example::after {
 <div class="gv-content-wrapper">
     <div class="gv-page-wrapper container">
                 <div class="gv-page-content">
-<h5 style="color:red">"Your message was sent successfully"</h5>
-                <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='contact.html'>
+            <div style="width: 100%; display: flex; justify-content: center;">
+<p><iframe width="900" height="506" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3678.0141923553406!2d89.551518!3d22.801938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff8ff8ef7ea2b7%3A0x1f1e9fc1cf4bd626!2sPranon+Pvt.+Limited!5e0!3m2!1sen!2s!4v1407828576904" allowfullscreen></iframe></p>
+</div>
+                <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_1' >
+					<form method='post' enctype='multipart/form-data'  id='gform_1'  action='gotit.html'>
                     
                         <div class="row">
     <div class="col-md-6 col-md-offset-3">
@@ -256,24 +266,16 @@ form.example::after {
                         Message:</label>
                     <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
                 </div>
-            </div>
+            </div>   
                         <div class="row">
                 <div class="col-sm-12 form-group">
                    <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! </button>
-                </div>
+                </div></form>
             </div>
 
-        </form>
-        <div id="success_message" style="width:100%; height:100%; display:none; ">
-            <h3>Sent your message successfully!</h3>
-        </div>
-        <div id="error_message"
-                style="width:100%; height:100%; display:none; ">
-                    <h3>Error</h3>
-                    Sorry there was an error sending your form.
-
-        </div>
-    </div>
+		
+      
+    </div></form>
 </div>
 
 
@@ -333,7 +335,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url: 'handler.php',
+                url: 'contact.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json' 
@@ -346,10 +348,12 @@ $(function()
 
 
 
-</div></div></div>
-</div></div></div></div></div>
-            </div>  
-<div id="gv-main-footer" class="gv-widget-wrapper gv-widget-fulllength gv-footer">
+
+
+        </div>
+        </div>
+</div>
+        <div id="gv-main-footer" class="gv-widget-wrapper gv-widget-fulllength gv-footer">
             <div class="container">
                 <div class="form-group row">
                     <div class="col-md-3">
@@ -403,70 +407,10 @@ $(function()
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-md-6 gv-footer-fineprint">
-                        <p>©Coppyright<br />
-<a href="">Privacy Policy |</a><a href="about.html">Tearm</a></p>
+                        <p>Coppyright@ 2019 IT news<br />
+<a href="">Hanu |Fit |HCI | </a><a href="aboutus.html">Team 2C-16</a></p>
                     </div>
                 </div>
             </div>
-        </div>
-<script src="//www.youtube.com/iframe_api"></script>
-<script type="text/javascript" src="https://d3pqsunsz2jksl.cloudfront.net/scripts/v1/push.v1.0.0"></script>
-<script src="https://www.garyvaynerchuk.com/wp-content/themes/garysixteen/assets/js/vendor/plugins.min.js"></script>
-<script src="https://www.garyvaynerchuk.com/wp-content/themes/garysixteen/assets/js/global.min.js?v=2"></script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-70669-20', 'auto');
-    ga('send', 'pageview');
-</script>
-    <div class="pixels"><!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','//connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '380822665420224');
-    fbq('track', "PageView");
-    fbq('track', 'ViewContent', {
-        content_name: "Content Page View"
-    });
-
-    fbq('trackCustom', 'Referral', {
-        url: document.referrer.split('/')[2]
-    });
-    
-    $('#mc-embedded-subscribe').on('click', function() {
-        fbq('track', 'Lead', {
-            content_name: "GaryVIP Submission"
-        });
-    });
-
-    $('.gv-ctrl-share').on('click', function() {
-        fbq('trackCustom', 'Shared', {
-            url: document.documentURI
-        });
-    });
-
-    $('#cal-reply-subscribe').on('click', function() {
-        fbq('track', 'CompleteRegistration', {
-            content_name: "Calendar Subscribed"
-        });
-    });
-
-</script>
-
-<!-- Google Code for Remarketing Tag -->
-</div>
-    <div class="pixels">
-<!-- hellobar -->
-<script type="text/javascript" src="//my.hellobar.com/27166323abab29e804f4300fb5f2c8ccabd39f0d.js" async="async"></script>
-<!--amazon-->
-<script type='text/javascript'>var _pix = document.getElementById('_pix_id');if (!_pix) { var protocol = '//'; var a = Math.random() * 1000000000000000000; _pix = document.createElement('img'); _pix.setAttribute('src', protocol + 's.amazon-adsystem.com/iu3?d=forester-did&ex-fargs=%3Fid%3D3370dd22-4f4d-2909-8938-a5f1f87f2bc8%26type%3D55%26m%3D1&ex-fch=416613&ex-src=www.garyvaynerchuk.com/books/&ex-hargs=v%3D1.0%3Bc%3D1148382647783%3Bp%3D3370DD22-4F4D-2909-8938-A5F1F87F2BC8' + '&cb=' + a); _pix.setAttribute('id','_pix_id'); document.body.appendChild(_pix);}</script><noscript> <img height='1' width='1' border='0' alt='' src='https://s.amazon-adsystem.com/iui3?d=forester-did&ex-fargs=%3Fid%3D3370dd22-4f4d-2909-8938-a5f1f87f2bc8%26type%3D55%26m%3D1&ex-fch=416613&ex-src=www.garyvaynerchuk.com/books/&ex-hargs=v%3D1.0%3Bc%3D1148382647783%3Bp%3D3370DD22-4F4D-2909-8938-A5F1F87F2BC8' /></noscript>
-</div></body>
+        </div></body>
 </html>
